@@ -2,58 +2,10 @@
 <html lang="en">
     <head>
         <title>Mit Iszunk-e Máma?</title>
-        <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-
-            body {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            #azivastargya {
-                text-align: center;
-                font-size: 7em;
-                text-transform: uppercase;
-            }
-        </style>
+        <link href="mitiszunk.css" type="text/css">
     </head>
     <body>
-        <h1 id="azivastargya"></h1>
-        <script type="application/javascript">
-            const ihatoDolgok = [
-                'sör',
-                'bor',
-                'rozé',
-                'pálinka',
-                'molnár gergely-féle vegyigyümi',
-                'ouzo',
-                'abszint',
-                'pultjava',
-                'kacsa',
-                'tüske',
-                'ukránmetil',
-                'vodka',
-                'a szomszéd bivalyborítgatója',
-                'whiskey',
-                'tátratea',
-                'almáspite',
-                'napoleon konyak',
-                'tálcakacsa'
-            ];
-
-            const randomIhatoDolog = ihatoDolgok[Math.floor(Math.random() * ihatoDolgok.length)];
-
-            window.onload = function () {
-                document.getElementById('azivastargya').innerText = randomIhatoDolog;
-            }
-        </script>
+        <h1 id="mitiszunk"></h1>
+        <script type="application/javascript" src="mitiszunk.js"></script>
     </body>
 </html>
