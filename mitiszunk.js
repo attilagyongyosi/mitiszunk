@@ -11,7 +11,7 @@ var drinks = [
     'csibi',
     'whiskeykóla',
     'hargita gyöngye elvitelre!',
-    'kűmőves actimel',
+    'kőműves actimel',
     'szilva ízű szeszes ital',
     'cherry',
     '1-1-es vodkasprite (1-1 korsó)',
