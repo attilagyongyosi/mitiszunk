@@ -25,7 +25,7 @@ var drinks = [
     'ukránmetil',
     'whiskey',
     'tátratea',
-    'napoleon konyak',
+    'napoleon konyak'
 ];
 
 var randomDrink = drinks[ Math.floor(Math.random() * drinks.length) ];
