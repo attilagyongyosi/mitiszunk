@@ -6,6 +6,8 @@ var drinks = [
     '4-1-es vadász dögborból',
     'habos unicum 2.0',
     'unicum',
+    'búvár',
+    'tengeralattjáró',
     'deci kevert',
     'portoricoi',
     'csibi',
