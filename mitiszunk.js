@@ -30,7 +30,8 @@ var drinks = [
     'napoleon konyak',
     'the famous grouse',
     'cider',
-    '12%-os van pur'
+    '12%-os van pur',
+    'tátrakacsa'
 ];
 
 var randomDrink = drinks[ Math.floor(Math.random() * drinks.length) ];
