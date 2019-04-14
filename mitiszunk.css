@@ -10,15 +10,25 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     background-color: #212121;
+    color: #FFFFFF;
 }
 
 a, a:visited {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
 
 #mitiszunk {

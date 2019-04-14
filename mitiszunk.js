@@ -34,8 +34,35 @@ var drinks = [
     'tátrakacsa'
 ];
 
-var randomDrink = drinks[ Math.floor(Math.random() * drinks.length) ];
+var weddingDrinks = [
+    'Jägermeister',
+    'Unicum',
+    'Jim Beam',
+    'Vilmoskörte',
+    'Metaxa',
+    'Gin',
+    'Bacardi',
+    'Finlandia',
+    'Feeney’s',
+    'Berentzen',
+    'Házi pálinka'
+];
+
+var isWeddingDate = function () {
+    var weddingDate = new Date('2019-04-26');
+    var today = new Date();
+
+    return today.toDateString() === weddingDate.toDateString();
+};
+
+var drinkList = isWeddingDate() ? weddingDrinks : drinks;
+
+var randomDrink = drinkList[ Math.floor(Math.random() * drinkList.length) ];
 
 window.onload = function () {
+    if (isWeddingDate()) {
+        document.getElementById('lagzi-p').classList.replace('hide', 'show');
+    }
+
     document.getElementById('mitiszunk').innerText = randomDrink;
-}
+};
