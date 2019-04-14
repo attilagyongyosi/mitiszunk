@@ -20,7 +20,14 @@ body {
 
 a, a:visited {
     text-decoration: none;
-    color: #FFFFFF;
+    color: inherit;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    color: inherit;
+    outline: 0;
 }
 
 .show {
@@ -29,6 +36,17 @@ a, a:visited {
 
 .hide {
     display: none;
+}
+
+#refresh {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#refresh:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #mitiszunk {

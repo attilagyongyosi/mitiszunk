@@ -55,9 +55,9 @@ var isWeddingDate = function () {
     return today.toDateString() === weddingDate.toDateString();
 };
 
-var drinkList = isWeddingDate() ? weddingDrinks : drinks;
+var renderRandom = function () {
+    var drinkList = isWeddingDate() ? weddingDrinks : drinks;
 
-window.onload = function () {
     if (isWeddingDate()) {
         document.getElementById('lagzi-p').classList.replace('hide', 'show');
     }
@@ -69,4 +69,8 @@ window.onload = function () {
 
     localStorage.setItem('drink', randomDrink);
     document.getElementById('mitiszunk').innerText = randomDrink;
+};
+
+window.onload = function () {
+    renderRandom();
 };
