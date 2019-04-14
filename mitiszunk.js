@@ -57,12 +57,16 @@ var isWeddingDate = function () {
 
 var drinkList = isWeddingDate() ? weddingDrinks : drinks;
 
-var randomDrink = drinkList[ Math.floor(Math.random() * drinkList.length) ];
-
 window.onload = function () {
     if (isWeddingDate()) {
         document.getElementById('lagzi-p').classList.replace('hide', 'show');
     }
 
+    var randomDrink;
+    do {
+        randomDrink = drinkList[ Math.floor(Math.random() * drinkList.length) ];
+    } while (randomDrink === localStorage.getItem('drink'));
+
+    localStorage.setItem('drink', randomDrink);
     document.getElementById('mitiszunk').innerText = randomDrink;
 };
