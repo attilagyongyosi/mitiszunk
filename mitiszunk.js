@@ -42,7 +42,7 @@ var weddingDrinks = [
     'Metaxa',
     'Gin',
     'Bacardi',
-    'Finlandia',
+    'Eristoff',
     'Feeney’s',
     'Berentzen',
     'Házi pálinka'
