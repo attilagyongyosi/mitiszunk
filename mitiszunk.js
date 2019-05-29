@@ -31,40 +31,14 @@ var drinks = [
     'the famous grouse',
     'cider',
     '12%-os van pur',
-    'tátrakacsa'
+    'tátrakacsa',
+    'keserű'
 ];
-
-var weddingDrinks = [
-    'Jägermeister',
-    'Unicum',
-    'Jim Beam',
-    'Vilmoskörte',
-    'Metaxa',
-    'Gin',
-    'Bacardi',
-    'Eristoff',
-    'Feeney’s',
-    'Berentzen',
-    'Házi pálinka'
-];
-
-var isWeddingDate = function () {
-    var weddingDate = new Date('2019-04-26');
-    var today = new Date();
-
-    return today.toDateString() === weddingDate.toDateString();
-};
 
 var renderRandom = function () {
-    var drinkList = isWeddingDate() ? weddingDrinks : drinks;
-
-    if (isWeddingDate()) {
-        document.getElementById('lagzi-p').classList.replace('hide', 'show');
-    }
-
     var randomDrink;
     do {
-        randomDrink = drinkList[ Math.floor(Math.random() * drinkList.length) ];
+        randomDrink = drinks[ Math.floor(Math.random() * drinks.length) ];
     } while (randomDrink === localStorage.getItem('drink'));
 
     localStorage.setItem('drink', randomDrink);
