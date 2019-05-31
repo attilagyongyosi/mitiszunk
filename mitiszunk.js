@@ -32,7 +32,9 @@ var drinks = [
     'cider',
     '12%-os van pur',
     'tátrakacsa',
-    'keserű'
+    'keserű',
+    'bacardi',
+    'bacardi breezer'
 ];
 
 var renderRandom = function () {
