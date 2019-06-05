@@ -34,7 +34,8 @@ var drinks = [
     'tátrakacsa',
     'keserű',
     'bacardi',
-    'bacardi breezer'
+    'bacardi breezer',
+    'békás feles'
 ];
 
 var renderRandom = function () {
