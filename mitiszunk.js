@@ -1,4 +1,4 @@
-var drinks = [
+const DRINKS = [
     'sör',
     'bor',
     'pálinka',
@@ -35,20 +35,19 @@ var drinks = [
     'keserű',
     'bacardi',
     'bacardi breezer',
-    'békás feles', 
-    'üveg kacsa' 
+    'békás feles',
+    'üveg kacsa',
+    'csapolt guinness'
 ];
 
-var renderRandom = function () {
-    var randomDrink;
+const renderRandom = function () {
+    let randomDrink;
     do {
-        randomDrink = drinks[ Math.floor(Math.random() * drinks.length) ];
+        randomDrink = DRINKS[ Math.floor(Math.random() * DRINKS.length) ];
     } while (randomDrink === localStorage.getItem('drink'));
 
     localStorage.setItem('drink', randomDrink);
     document.getElementById('mitiszunk').innerText = randomDrink;
 };
 
-window.onload = function () {
-    renderRandom();
-};
+window.onload = renderRandom;
